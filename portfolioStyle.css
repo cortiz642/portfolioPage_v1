@@ -4,9 +4,14 @@
     box-sizing: border-box;
 }
 body {
-    min-height: 100vh;
+    /*background-image: url("img/programming-code-abstract-technology-background-software-developer-computer-script_34663-2.webp");*/
+    /*min-height: 100vh;*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    /*background-color: honeydew;*/
     background: #0c192c;/*#0c192c*/
-    /*opacity: 75%;*/
+    /*opacity: 95%;*/
 }
 .container{
     position: relative;
@@ -61,13 +66,36 @@ body {
         transform: translateY(100vh)scale(0);
     }
 }
-/*#navbar{*/
-/*    background-color: gold;*/
-/*    height: 50px;*/
-/*}*/
-/*.about-link{*/
-/*    !*display: inline-flex;*!*/
-/*    align-content: space-between;*/
+#navbar{
+    /*background-color: white ;*/
+    opacity: 75%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 35px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.6);
+    border-bottom: 1px solid #fff;
+}
+.about-link{
+    color:white;
+    font-size: 25px;
+    font-family: 'Audiowide', sans-serif;
+    text-shadow: 1px 1px 1px darkslategray;
+    text-decoration: none;
+}
+.portfolio-link{
+    color:white;
+    font-size: 25px;
+    font-family: 'Audiowide', sans-serif;
+    text-shadow: 1px 1px 1px darkslategray;
+    text-decoration: none;
+}
+.contact-link{
+    color:white;
+    font-size: 25px;
+    font-family: 'Audiowide', sans-serif;
+    text-shadow: 1px 1px 1px darkslategray;
+    text-decoration: none;
+}
 
-
-/*}*/
