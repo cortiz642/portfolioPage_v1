@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    background: #0c192c;/*#0c192c*/
+    /*opacity: 75%;*/
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.bubbles{
+
+    position: relative;
+    display: flex;
+
+    transform: translate3d(42px, -62px, -135px);
+
+}
+/******bubble animation fixed***********/
+.bubbles span{
+    /*transform: translate3d(42px, -62px, -135px);*/
+    position: relative;
+    width: 2px;
+    height: 1000px;
+    background: midnightblue;/*#4fc3dc*/
+    margin: 10px 15px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px 1px #4fc3dc44,
+    1px 1px 1px #4fc3dc,
+    0 10px 10px #4fc3dc;
+    animation: animate 150s linear infinite;
+    /******** bubbles flow on y-axis in random order quickly ************/
+    animation-duration: calc(4000s / var(--b));
+}
+/****** sets the middle bubble to a pinkish redish color ********/
+.bubbles span:nth-child(even){
+    /*transform: translate3d(42px, -62px, -135px);*/
+    background: 100px 200px white; /*#ff2d75*/
+    box-shadow: 5px 5px 2px 0 honeydew, /*#ff2d7544*/
+    0 0 1px wheat, /*#ff2d75*/
+    0 0 10px yellow; /*#ff2d75*/
+}
+/******** Three bubbles in line horizontal scroll upward (Y Axis) increasing brightness *********/
+@keyframes animate{
+    50%{
+        transform: translateX(10vh)scale(3);
+    }
+    0%{
+        transform: translateX(10vh)scale(0);
+    }
+    100%{
+        transform: translateY(100vh)scale(1);
+    }
+    0%{
+        transform: translateY(100vh)scale(0);
+    }
+}
+/*#navbar{*/
+/*    background-color: gold;*/
+/*    height: 50px;*/
+/*}*/
+/*.about-link{*/
+/*    !*display: inline-flex;*!*/
+/*    align-content: space-between;*/
+
+
+/*}*/
